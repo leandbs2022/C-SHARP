@@ -28,3 +28,4 @@ C:\C-SHARP\MVC\LHPet\obj\Debug\net8.0\refint\LHPet.dll
 C:\C-SHARP\MVC\LHPet\obj\Debug\net8.0\LHPet.pdb
 C:\C-SHARP\MVC\LHPet\obj\Debug\net8.0\LHPet.genruntimeconfig.cache
 C:\C-SHARP\MVC\LHPet\obj\Debug\net8.0\ref\LHPet.dll
+C:\C-SHARP\MVC\LHPet\obj\Debug\net8.0\LHPet.sourcelink.json
