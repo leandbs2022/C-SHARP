@@ -2,31 +2,6 @@
     ViewData["Title"] = "LH Pet";
 }
 
-
-
-<div class='text-center'>
-@foreach( var item in @ViewBag.listaCliente){
-<div> @item.Id</div>
-<div> @item.Nome</div>
-<div> @item.Cpf</div>
-<div> @item.Email</div>
-<div> @item.Paciente</div>
-}
-
-@foreach( var item in @ViewBag.listaFornecedores){
-<div> @item.Id</div>
-<div> @item.Nome</div>
-<div> @item.Cnpj</div>
-<div> @item.Email</div>
-}
-</div>
-
-
-
-
-
-
-<!--
 <div class="container">
     using System.Collections.ObjectModel;
 
@@ -36,7 +11,7 @@
                 <caption>Lista de clientes</caption>
                 <thead class="table-dark">
                     <tr>
-                        <th scope=" col">Id</th>
+                        <th scope="col">Id</th>
                         <th scope="col">Nome</th>
                         <th scope="col">CPF</th>
                         <th scope="col">E-mail</th>
@@ -44,13 +19,17 @@
                     </tr>
                 </thead>
                 <tbody>
+                     @foreach( var item in @ViewBag.listaCliente){
                     <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    
+                        <th scope="row">@item.Id</th>
+                        <td>@item.Nome</td>
+                        <td>@item.Cpf</td>
+                        <td>@item.Email</td>
+                        <td>@item.Paciente</td><br>
+                       
                     </tr>
+                     }
                 </tbody>
             </table>
 
@@ -59,6 +38,8 @@
                 <caption>Lista de fornecedores</caption>
                 <thead class="table-dark">
                     <tr>
+                       
+</div>
                         <th scope="col">Id</th>
                         <th scope="col">Nome</th>
                         <th scope="col">CNPJ</th>
@@ -66,14 +47,17 @@
                     </tr>
                 </thead>
                 <tbody>
+                     @foreach( var item in @ViewBag.listaFornecedores){
                     <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        
+                        <th scope="row">@item.Id</th>
+                        <td>@item.Nome</td>
+                        <td>@item.Cnpj</td>
+                        <td>@item.Email</td>
+                       
                     </tr>
+                     }
                 </tbody>
             </table>
 
 </div>
--->
